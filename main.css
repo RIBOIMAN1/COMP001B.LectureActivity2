@@ -48,6 +48,7 @@ body {
     font-size: 17px;
     box-sizing: border-box;
     overflow: auto;
+    color: darkred
 } /* The design elements for the outer box, also allowing it to squish when the window is small and be scrolled */
 
 .inner-box {
@@ -62,4 +63,5 @@ body {
     font-size: 15px;
     margin: 10px auto;
     box-sizing: border-box;
+    color: darkblue;
 } /* The design elements for the inner box, also allowing it to squish when the window is small and be scrolled (with the outer box, not separately) */
