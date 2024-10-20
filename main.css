@@ -27,6 +27,7 @@ body {
 .Header {
     font-size: 50px;
     color: #FF4500;
+    background-color: yellow;
     font-weight: bold;
     font-family: Arial, sans-serif;
     position: absolute;
@@ -44,7 +45,7 @@ body {
     margin-top: 60px;
     background-color: hsl(180, 100%, 85%);
     position: relative;
-    text-align: justify;
+    text-align: left;
     font-size: 17px;
     box-sizing: border-box;
     overflow: auto;
@@ -59,7 +60,7 @@ body {
     border: 5px solid black;
     background-color: hsl(180, 100%, 40%);
     position: relative;
-    text-align: justify;
+    text-align: center;
     font-size: 15px;
     margin: 10px auto;
     box-sizing: border-box;
