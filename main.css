@@ -5,7 +5,7 @@ body, h1, h2, ul, li, a {
 }
 
 body {
-    background: radial-gradient(circle, rgb(0,0,0), rgb(40,0,40)); /* Gradient dark purple background */
+    background: radial-gradient(circle, rgb(255,255,255), rgb(40,0,40)); /* Gradient dark purple background */
 }
 
 h1 {
@@ -193,3 +193,52 @@ body, html {
 .ThinBorder {
     border: 1px solid;color: plum;
 } /* Applies a very thin solid border with the plum color to images */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+} /* Centers boxes */
+
+.Header {
+    font-size: 50px;
+    color: #FF4500;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    z-index: 10;
+    padding: 0 10px;
+    top: -40px;
+} /* Controls header design and aligns it */
+
+.outer-box {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    border: 5px solid black;
+    margin-top: 60px;
+    background-color: hsl(180, 100%, 85%);
+    position: relative;
+    text-align: justify;
+    font-size: 17px;
+    box-sizing: border-box;
+    overflow: auto;
+} /* The design elements for the outer box, also allowing it to squish when the window is small and be scrolled */
+
+.inner-box {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: hsl(180, 100%, 40%);
+    position: relative;
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px auto;
+    box-sizing: border-box;
+} /* The design elements for the inner box, also allowing it to squish when the window is small and be scrolled (with the outer box, not separately) */
